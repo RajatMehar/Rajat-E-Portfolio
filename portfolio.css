@@ -1,7 +1,6 @@
 *{
     margin: 0; 
     padding: 0;
-    background-color: #1b1b1b;
     scroll-behavior: smooth;
   @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
 
@@ -140,15 +139,15 @@ nav .fa-solid{
     }
 }
 
-/*@keyframes head1 {
+@keyframes head1 {
     from{
         font-weight: 800;
-        color:cyan
+        color:rgb(234, 13, 13)
     }   
     to{
         font-weight: 400;
     } 
-}*/
+}
 #head2{
     font-size: 3vh;
     font-family:monospace
@@ -159,6 +158,8 @@ nav .fa-solid{
 .icon{
     display: block;
     padding: 5px;
+    margin-top: 20px; 
+    margin-left: 15px;
 }
 
 .icon i{
@@ -173,10 +174,18 @@ nav .fa-solid{
     font-size: 25px;
     margin-right:30px;
 }
+ .icon a{
+    padding:7px;
+    color: whitesmoke;
+    display:inline-block;
+    transition: transform 0.5s;
+ }
 
 
 /*------------------ABOUT--------------------*/
-
+#project{
+    background-color: #262626;
+}
 #about{
     padding:80px 0;
     background: #1b1b1b;
@@ -203,6 +212,7 @@ nav .fa-solid{
 }
 .about-me h1{
     font-size: 60px;
+    margin: 0 0 20px 0;
     font-weight: 200;
 }
 .about-me p{
@@ -213,7 +223,7 @@ nav .fa-solid{
 .tab-title{
     display:flex;
     padding:5px 0;
-    margin:20px 0 40px;
+    margin:28px 0 40px;
 }
 .tab-link{
     font-family: serif;
@@ -324,17 +334,20 @@ nav .fa-solid{
  .info2 p{
     margin: 8px;
  }
- .icon{
-    margin-top: 20px; 
-    margin-left: 15px;
+ 
+ .icon2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+.icon2 a{
+    color: white;
+    letter-spacing:40px;
+}
+.icon2 i{
     font-size: 25px;
- }
- .icon a{
-    padding:7px;
-    color: whitesmoke;
-    display:inline-block;
-    transition: transform 0.5s;
- }
+}
  .icon a:hover{
     color:rgba(231, 140, 29, 0.826);
     transform: translateY(-5px);
@@ -343,8 +356,8 @@ nav .fa-solid{
     margin-top: 10px;
     display:inline-block;
     color:#fff;
-    padding:3px;
-    margin-left: 8px;
+    padding:10px;
+    margin-left: -28px;
     transition:transform 0.5s;
     text-decoration: none;
     background-color: #bf6f19;
@@ -408,7 +421,7 @@ nav .fa-solid{
         margin-bottom:2%;
     }
     nav .logo{
-        font-size:50px;
+        font-size:48px;
     }
     #sidemenu{
         height:100%;
@@ -423,15 +436,16 @@ nav .fa-solid{
     
     #head1{
         text-align: center;
-        font-size:20vw;
-        font-weight: 900;
-    }
-    #head2{
-        font-size:9vw;
+        font-size:16vw;
         font-weight: 800;
     }
+    #head2{
+        font-size:7vw;
+        font-weight: 600;
+    }
     .icon{
-        display: block;
+        display: flex;
+        flex-direction: row;
         padding: 5px;
     }
     
@@ -446,6 +460,9 @@ nav .fa-solid{
         color: whitesmoke;
         font-size: 15px;
         margin-right:10px;
+    }
+    .icon a{
+        margin-left:13px;
     }
     nav.fas{
         display:block;
@@ -464,12 +481,12 @@ nav .fa-solid{
     
     nav ul{
         display: inline-block;
-        background: #8d3303;
+        background: #1e1b1b;
         position :fixed;
         top:0;
         right:0;
         right:-200px;
-        width: 200px;
+        width: 240px;
         height: 90vh;
         padding-top:60px;
         z-index:2;
@@ -483,9 +500,7 @@ nav .fa-solid{
     .about-me h1{
         padding-bottom:20px;
     }
-    .container{
-        margin-top:50px;
-    }
+    
     .container h1{
         text-align: center;
         margin-top:1px;
@@ -513,11 +528,10 @@ nav .fa-solid{
         font-size:30px
     }
     nav ul li {
-        height: 35px;
         display: flex;
         justify-content: center;
-        margin:35px;
-        padding-left: 10px;
+        margin:70px;
+        padding-left: 30px;
     }
 
     nav ul li a{
@@ -532,6 +546,20 @@ nav .fa-solid{
         border-radius: 5px;
         transition: all 0.4s ease;
     }
+    .icon2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+        font-size: 35px;
+    }
+    .icon2 a{
+        color: white;
+        letter-spacing:40px;
+    }
+    .icon2 i{
+        font-size: 48px;
+    }
     .row{
         display: flex;
         flex-direction: column;
@@ -540,7 +568,7 @@ nav .fa-solid{
         background:rgb(211, 58, 58);
         transform: translateY(-20px);
     }
-    .info2 , .form{
+    .info2  .form{
         flex-basis: 100%;
     }
     .form{
