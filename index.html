@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, user-scalable=1;">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Rajat Portfolio</title>
+    <script src="https://kit.fontawesome.com/b8e43f17ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <span>R</span>ajat<span>M</span>ehar
+        </div>
+        <label for="" class="menu-btn">
+            <i class="fas fa bars"></i>
+        </label>
+        <ul id="sidemenu">
+            <li><a class="active" href="#main"> HOME</a></li>
+            <li><a href="#about"> ABOUT</a></li>
+            <li><a href="#project"> PROJECTS</a></li>
+            <li><a href="#contact"> CONTACTS</a></li>
+            <!--<li><a href="#"> FEEDBACK</a></li>-->
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+<!-----------------------------PAGE = 1---------------------------------->
+<div id ="main">
+    <div class="main">
+        <div class="infobox">
+            <div class="info">
+                <h1 id="head1"><span>He</span> It's me <span>Ra</span>jat <span>Me</span>har </h1><br>
+                <h3 id="head2">A Computer Science Student</h3>
+                <div class="logo">
+                    <div class="icon">
+                        <a href="https://www.instagram.com/rajatmehar17/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/rajat.mehar.31/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rajat-mehar-829670215/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="icon">
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        <p>Linkedin</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+    <!--------------------------------------ABOUT-------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-img">
+                    <img src="rjt pic.jpeg" alt="">
+                </div>
+                <div class="about-me">
+                    <h1>ABOUT ME</h1>
+                    <p>He ! I am Rajat Mehar and I live in Dehradun . Currently I am pursuing Bachelor's in Computer
+                        Science And Engineering from Graphic Era Hill University .Talking about my technical skills I am
+                        good at C++ (proficient) and I also knows C and Java programming languages . I am also good at
+                        Oracle Database .<br>
+                        <br>
+                        My carrier objective is to be a Software Developer in a company where I can utilize and enhance
+                        my skills and add value to it . My hobbies include playing Volleyball because it makes me learn
+                        to work in a team and keeps me physically fit and I also love to listen Bhajans as it keeps me
+                        closer to god .
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skill') ">SKILLS</p>
+                        <p class="tab-link" onclick="opentab('edu')">EDUCATION</p>
+                        <p class="tab-link" onclick="opentab('cert')">CERTIFICATIONS / SOFTWARES</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>Web Development</span><br> HTML CSS AND JAVASCRIPT</li>
+                            <li><span>Programming Languages</span><br> C++ (proficient) , JAVA</li>
+                            <li><span>Database</span><br> Oracle Database with MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="edu">
+                        <ul>
+                            <li><span>Under Graduate</span><br> B-Tech in Computer Science And Engineering from Graphic
+                                Era Hill University </li>
+                            <li><span>Intermediate</span><br>Scored 72% from Fylfot Public School , CBSE board</li>
+                            <li><span>High School</span><br>Scored 81.8% from Fylfot Public School , CBSE board</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="cert">
+                        <ul>
+                            <li><span>Softwares</span><br>VS code / Github / Oracle</li>
+                            <li><span>Certifications</span><br>Introduction to Cryptography <br> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------PROJECTS------------------------>
+    <div id="project">
+        <div class="container">
+            <h1 class="mypro">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>University Query Chatbot</h2>
+                    <p>Chatbot created to resolve student's query related to university </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Online Real Time Compiler</h2>
+                    <p>It is basically a website where the user can compile HTML , CSS AND JAVASCRIPT code all together.
+                        It basically uses microsoft's monaco editor for compilation of the source code. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Feedback System</h2>
+                    <p>It is a program used to store feedbacks of the users and stores it in backend. This project is
+                        created using Java programming language and it's AWT toolkit.It uses JDBC to store the feedback. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Personal Portfolio</h2>
+                    <p>It is a personal E-Portfolio website developed using HTML , CSS and JAVASCRIPT.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------CONTACT------------------------------->
+
+    <div id="contact">
+        <div class="container3">
+            <div class="row">
+                <div class="info2">
+                    <h1 class ="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-regular fa-paper-plane"></i>  meharrajat17@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  90582841133</p>
+                    <div class = "icon">
+                        <a href="https://www.facebook.com/rajat.mehar.31/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/rajatmehar17/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajat-mehar-829670215/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="" class="btn btn2"> Download CV</a>
+                </div>
+                <div class="form">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name = "Name" placeholder="Your Name" required>
+                        <input type = "email" name = "E-mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" id = "btn">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer class="foot">
+            <p> Copyright  <i class="fa-solid fa-copyright"></i> made with HTML , CSS and Javascript by Rajat Mehar  <i class="fa-solid fa-heart-pulse"></i> .</p>
+        </footer>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        var sidem =document.getElementById("sidemenu");
+        function openmenu(){
+            sidem.style.right="0";
+        }
+        function closemenu(){
+            sidem.style.right="-200px";
+        }
+        document.getElementById('head1');
+        console.log(head1);
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-uxN_LxDgmA1TYVIY9AMZPyGDlpBSnTLXdmwXBxKgsi57anRXo8rFmAxMzxEu5PWt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+                msg.innerHTML = "Message sent Successfully!!";
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },8000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body{
+    margin:  0;
+    background-color: #262626;
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    justify-content: center;
+    font-family:sans-serif;
+    background: url("kedarnath-temple-banners-4k-9pd6c84fjldyenjg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+}
+h1{
+    color:#e36e0f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom:9vh;
+}
+.time{
+    margin-left: 12vw;
+    opacity: 0.6;
+}
+.time span{
+    margin:7vw;
+    color: aliceblue;
+    background:rgba(197, 110, 52, 0.6);
+    font-size:11vw;
+    
+}
+.write{
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    
+}
+.write div{
+    margin-left: 4vw;
+    color: aliceblue;
+    
+}
+.write .h{
+    width: 12.3vw;
+    text-align: center;
+    background-color: rgba(141, 72, 8, 0.7);
+}
+.write .m{
+    margin-left: 14.2vw;
+    width:12.3vw;
+    text-align: center;
+    background-color: rgba(141, 72, 8, 0.7);
+
+}
+.write .s{
+    margin-left: 14.22vw;
+    text-align: center;
+    width:12.4vw;
+    background-color:  rgba(141, 72, 8, 0.7);
+
+}
+.ampm{
+    background-color: rgb(116, 28, 10);
+    width:4.vw;
+    text-align: center;
+}
